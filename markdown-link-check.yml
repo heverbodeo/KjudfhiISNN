@@ -10,14 +10,6 @@ on:
 permissions:
   contents: read
 
-jobs:
-  markdown-link-check:
-    runs-on: ubuntu-latest
-    # check out the latest version of the code
-    steps:
-    - uses: actions/checkout@v3
-      with:
-        ref: 'main'
 
     # Checks the status of hyperlinks in .md files in verbose mode
     - name: Check links
